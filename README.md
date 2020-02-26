@@ -1,7 +1,5 @@
 # Restful  API wrapper for Ethereum web3.js
 
-Intended to support all web3.js APIs, not tested yet.
-
 ## Install
 
 - Install
@@ -50,6 +48,8 @@ POST /x/y/z
 
 ## Examples
 
+Refer to [web3.js API doc](#https://web3js.readthedocs.io/en/v1.2.6/)
+
 ### encodeFunctionSignature
 
 web3.js
@@ -84,7 +84,7 @@ curl -X POST -d '{"params": ["uint256", "2345675643"]}' -H "Content-Type:applica
 
 web3.js
 
-​```javascript
+```javascript
 web3.eth.abi.encodeParameters(['uint8[]','bytes32'], [['34','434'], '0x324567fff']);
 > "0x00000000000000000000000000000000000000000000000000000000000000400324567fff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000002200000000000000000000000000000000000000000000000000000000000000b2"
 ```
@@ -101,7 +101,7 @@ curl -X POST -d '{"params": [["uint8[]","bytes32"],[["34","434"],"0x324567fff"]]
 
 web3.js
 
-```javascript
+​```javascript
 web3.eth.abi.encodeFunctionCall({
     name: 'myMethod',
     type: 'function',
