@@ -38,13 +38,13 @@ POST /x/y/z
 
 Body
 
-```json
+```
 { "params": [ param1, param2, ... ] }
 ```
 
 Response
 
-```json
+```
 { "result": "result from web3.js" }
 ```
 
