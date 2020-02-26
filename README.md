@@ -48,7 +48,7 @@ POST /x/y/z
 
 ## Examples
 
-Refer to [web3.js API doc](#https://web3js.readthedocs.io/en/v1.2.6/)
+Refer to [web3.js API doc](https://web3js.readthedocs.io/en/v1.2.6/)
 
 ### encodeFunctionSignature
 
@@ -101,7 +101,7 @@ curl -X POST -d '{"params": [["uint8[]","bytes32"],[["34","434"],"0x324567fff"]]
 
 web3.js
 
-​```javascript
+```javascript
 web3.eth.abi.encodeFunctionCall({
     name: 'myMethod',
     type: 'function',
@@ -144,7 +144,7 @@ curl -X POST -d '{
 
 web3.js
 
-```javascript
+​```javascript
 web3.eth.abi.decodeParameter('uint256', '0x0000000000000000000000000000000000000000000000000000000000000010');
 > "16"
 ```
