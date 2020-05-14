@@ -1,6 +1,14 @@
-# Restful  API wrapper for Ethereum web3.js
+# RESTful  API wrapper for Ethereum web3.js
 
-## Install
+## Run
+
+### Docker
+
+```shell
+docker run -d -p 3000:3000 vittoj/web3-restful:0.0.1
+```
+
+### Node.js
 
 - Install
 
@@ -144,7 +152,7 @@ curl -X POST -d '{
 
 web3.js
 
-​```javascript
+```javascript
 web3.eth.abi.decodeParameter('uint256', '0x0000000000000000000000000000000000000000000000000000000000000010');
 > "16"
 ```
@@ -161,7 +169,7 @@ curl -X POST -d '{"params": ["uint256", "0x0000000000000000000000000000000000000
 
 web3.js
 
-```javascript
+​```javascript
 web3.eth.abi.decodeParameters(['string', 'uint256'], '0x000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000ea000000000000000000000000000000000000000000000000000000000000000848656c6c6f212521000000000000000000000000000000000000000000000000');
 > Result { '0': 'Hello!%!', '1': '234', '__length__': 2 }
 ```
